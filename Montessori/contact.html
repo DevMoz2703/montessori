@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte Montessori</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Contacte-nos</h2>
+        <p>Deixa sua mensagem e nos responderemos assim que possivel</p>
+
+        <form action="">
+            <div>
+                <span>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="" id="nome" placeholder="Nome completo">
+                </span>
+                <span>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="" id="email" placeholder="Email">
+                </span>
+            </div>
+            <label for="mensagem">Tua mensagem</label><br>
+            <textarea name="" id="mensagem" cols="30" rows="10" placeholder="Tua mensagem"></textarea>
+            <button onclick="enviarparawhatsapp()">Submit</button>
+            <button onclick="enviarparaemail()">Para o email</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</body>
+</html>
